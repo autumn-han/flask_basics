@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground 2</title>
+</head>
+<body>
+    <h1 style="text-align:center; font-family:Arial, Helvetica, sans-serif">Welcome!</h1>
+    <div style="display:flex; justify-content:space-evenly">
+        {% for x in range(0,times): %}
+            <div style="width:200px; height:200px; background-color:rgb(71, 175, 255); border:rgb(28, 28, 28) solid 3px; border-radius:25px">{{ times }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
