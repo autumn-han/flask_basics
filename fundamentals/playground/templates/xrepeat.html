@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1 style="text-align:center; font-family:Arial, Helvetica, sans-serif">Welcome!</h1>
-    <div style="display:flex; justify-content:space-evenly">
+    <div style="display:flex; justify-content:start; flex-wrap:wrap">
         {% for x in range(0,times): %}
-            <div style="width:200px; height:200px; background-color:rgb(71, 175, 255); border:rgb(28, 28, 28) solid 3px; border-radius:25px">{{ times }}</div>
+            <div style="width:200px; height:200px; margin:10px; background-color:rgb(71, 175, 255); border:rgb(28, 28, 28) solid 3px; border-radius:25px"></div>
         {% endfor %}
     </div>
 </body>
