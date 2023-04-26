@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Checkerboard</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+    <div>
+        {% for i in range(0,z): %} 
+            <div>
+                {% for i in range(0,x): %}
+                    <div class="container">
+                        {% for i in range(0,4): %}
+                            <div class="black square"></div>
+                            <div class="red square"></div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                {% for i in range(0,y): %}
+                    <div class="container">
+                        {% for i in range(0,4): %}
+                            <div class="red square"></div>
+                            <div class="black square"></div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
